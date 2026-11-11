@@ -104,6 +104,10 @@ section.block .wrap { display: grid; grid-template-columns: 220px minmax(0, 1fr)
 .post.soon p { margin: 10px 0 0; font-size: 14px; color: var(--stone); }
 .post.soon .big { position: absolute; top: 14px; right: 18px; font-family: var(--display); font-weight: 300; font-size: 120px; line-height: 1; color: var(--stone); opacity: .3; }
 
+.post.text { background: #1d1c1b; }
+.post.text::before { display: none; }
+.post.text p { margin: 10px 0 0; font-size: 13px; color: rgba(255,255,255,.7); }
+
 /* Process */
 .steps { margin: 40px 0 0; padding: 0; list-style: none; counter-reset: s; border-top: 1px solid var(--ink); }
 .steps li { counter-increment: s; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
@@ -219,11 +223,12 @@ footer p { margin: 0; color: var(--stone); font-size: 13px; }
 
   <section class="block" id="archive">
     <div class="wrap">
-      <div class="label caps">Archive<span class="k">06</span></div>
+      <div class="label caps">Archive<span class="k">07</span></div>
       <div>
-        <h2>지금까지 올린 <b>PROJECT와 INFO</b></h2>
+        <h2>지금까지 올린 <b>PROJECT · SPACE · INFO</b></h2>
         <p class="intro">실제 프로젝트는 업체의 확인을 거쳐 공개하고, INFO는 인테리어를 준비하는 사람이 상담 전에 저장해 두고 하나씩 확인할 수 있도록 만들었습니다. 전체 카드는 인스타그램에서 볼 수 있습니다.</p>
         <div class="archive">
+          <a class="post text" href="https://www.instagram.com/p/DflKTmSn-Pl/" target="_blank" rel="noopener"><span class="tag">SPACE 01 · 서울시 건축상</span><h3>올해 서울에서 상 받은 건물 10곳, 누가 설계했을까?</h3><p>제44회 서울특별시 건축상 수상작 · 자료 서울특별시</p></a>
           <a class="post" style="background-image:url('img/project01.jpg')" href="https://www.instagram.com/p/De13YRQnzd9/" target="_blank" rel="noopener"><span class="tag">PROJECT 01 · 해치인테리어</span><h3>빌딩 숲 사이 ㄷ자 한옥, 해치 클래식 충무로역</h3></a>
           <a class="post" style="background-image:url('img/info05.jpg')" href="https://www.instagram.com/p/DemRKRsnxtk/" target="_blank" rel="noopener"><span class="tag">INFO 05 · CHECK</span><h3>좋은 포트폴리오와 내게 맞는 업체는 다를 수 있습니다</h3></a>
           <a class="post" style="background-image:url('img/info01.jpg')" href="https://www.instagram.com/archi_penguin/" target="_blank" rel="noopener"><span class="tag">INFO 01 · CHECK</span><h3>인테리어 업체 고를 때 사진보다 먼저 볼 7가지</h3></a>
